@@ -1,0 +1,318 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+	margin:0;
+}
+#khung
+{
+	width: auto;
+	margin-top: 0 auto;
+}
+#logo
+{
+	height: 150px;
+    margin-top: 0 auto;
+    background-color: #6f91dd;
+	
+}
+
+#logo img
+{
+	
+	width: 130px;
+    height: 130px;
+    margin-left: 110px ;
+    margin-top: 10px;
+	border: none;
+	
+}
+
+
+#logo p{
+    float: left;
+    line-height: 88px;
+    padding-left: 200px;
+	clear: both;
+
+}
+#logo p input{
+	border: 1px black solid;
+    height: 50px;
+    width: 350px;
+	clear: both;
+	position: relative;
+	margin-top: 40px;
+	
+	
+}
+#logo div{
+    height: 50px;
+    width: 50px;
+    float: left;
+    font-size: 20px;
+    margin-top: 40px;
+    background-color: skyblue;
+	border: 1px black solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    line-height: 50px;
+	
+	
+
+} 
+
+#header
+{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+	background-color: #6f91dd;
+	
+}
+
+#khung div{
+    float: left;
+    line-height: 50px;
+    width: 130px;
+    text-align: center;
+
+    
+}
+#khung div:hover {
+	
+    background-color: skyblue;
+    cursor: pointer;
+	
+	
+
+}
+
+#khung .Danhsach:hover li{
+    display: block;
+	
+}
+
+#khung ul li{
+    height: 30px;
+    display: none;
+    float: none;
+    clear: both;
+    text-decoration: none;
+    text-align: left;
+    
+    line-height: 40px;
+    box-shadow:black;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: black;
+	
+}
+
+.Danhsach i{
+    margin: 10px;
+    line-height: 0px;
+    font-size: 13px;
+	
+	
+}
+.Danhsach ul li{
+    display: inline-block;
+}
+
+.noidung_danhsach {
+ 
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 200px;
+   z-index: 1;
+   
+ }
+
+
+ .noidung_danhsach a:hover 
+{
+	color: black;
+	display: block;
+	border: 1px black solid;
+	background-color: skyblue;
+
+	
+}
+
+ .dropdown:hover .noidung_danhsach 
+{
+	
+	display: block;
+}
+
+.noidung_danhsach a:not(:hover) 
+{ 
+    background-color: white;
+	color: black;
+    
+}
+
+ .noidung_danhsach a {
+ 		
+
+   text-decoration: none;
+   display: block;
+ }
+
+
+
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+ }
+
+ .noidung_sanpham {
+ 
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 130px;
+   z-index: 1;
+   
+ }
+
+
+ .noidung_sanpham a:hover 
+{
+	color: black;
+	display: block;
+	border: 1px black solid;
+	background-color: skyblue;
+
+	
+}
+
+ .dropdown:hover .noidung_sanpham 
+{
+	
+	display: block;
+}
+
+.noidung_sanpham a:not(:hover) 
+{ 
+    background-color: white;
+	color: black;
+    
+}
+
+ .noidung_sanpham a {
+ 
+   text-decoration: none;
+   display: block;
+ }
+
+#TaiKhoan:hover ul li{
+	
+    display: block;
+	
+	
+}
+#TaiKhoan ul li:hover{
+    background-color: skyblue;
+	
+}
+#TaiKhoan ul{
+	
+    background-color: white;
+	list-style-type: none;
+	padding-left: 15px;
+
+}
+
+
+
+.slideshow
+{
+
+  margin: auto;
+  overflow: hidden;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0 auto;
+}
+.slides
+{
+	width: 500%;
+	
+	display: flex;
+}
+
+.slide
+{
+  
+  height: 400px;
+  margin-bottom: 30px;
+  transition: 0.6s ease;
+ 
+  padding-right: 50px;
+  overflow: hidden;
+  
+  border-radius: 10px;
+  position: relative;
+
+  padding-left: 45px;
+ 
+}
+
+.slides img{
+	position: relative;
+	width: 1170px;
+	height: 400px;
+	border-radius: 10px;
+	border: 2px black solid;
+}
+#mini {
+	text-align: center;
+	font-weight: bold;
+	background-color: #6f91dd;
+	height: 100px;
+	bottom: 10px;
+	text-transform: uppercase;
+	
+	}
+		
+	
+		
+#footer{
+	float:both;
+	background-color:white;
+	padding-top: 20px;
+	clear: both;
+	
+	}
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 1024px) {
+}
+

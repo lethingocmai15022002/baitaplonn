@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<title>ĐĂNG KÝ</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link rel="stylesheet" type="text/css" href="../css/dang-ky.css" />
+<link rel="stylesheet" href="../themify-icons/themify-icons.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/abe5ac197b.js"></script>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+</style>
+	
+	
+</head>
+	
+<body background="../img/Background-y-te-dep.jpg" style="background-size: cover">
+	
+	<form name="FDK" action="dang-nhap.html" method="post" >
+	<div id="dang-ky">
+    	<img src="../img/logo2.png"/>
+		<div style="display: block; color: #3655DB; font-size: 24px; padding-top: 28px;text-align: center; margin-left: 60px;font-weight: bold">ĐĂNG KÝ
+        </div><br>
+		<a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+			<button class="signup-social">
+				<i class="fa fa-google signup-social-icon"></i>
+				<span class="signup-social-text">Sign up with Google</span>
+			</button>
+		</a>
+		<div class="signup-or">
+			<span>Or</span>
+		</div>
+			
+		<div style="margin-left: 180px;">
+			
+			<lable><b>Họ và tên</b></lable>
+            <br>
+			<input type="text" onblur="kiemTraTen()" size="30" style="height:35px"
+			name="ten" id="ten" 
+			pattern="/([A-Z]{1}[a-z]+)((\s{1}[A-Z]{1}[a-z]+){1,})$/" required placeholder="Nhập họ và tên" title="Nhập họ và tên, viết hoa kí tự đầu, không dùng số">
+            
+			<span id="tenError" style="color:red;">́* bắt buộc</span>
+			<br>
+
+			<lable><b>Giới tính</b></lable>
+			<input type="radio" size="30" style="height:35px; "
+			name="gender" id="male" value="M" checked
+			>
+			<label for="male">Nam</label>
+			<input type="radio" size="30" style="height:35px"
+			name="gender" id="female" value="Fm" 
+			>
+			<label for="female" >Nữ</label>
+			<br>
+
+			<lable><b>Email</b></lable>
+            <br>
+			<input type="email" onblur="kiemTraEmail()" size="30" style="height:35px"
+			name="Email" id="Email" 
+			pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Nhập Email" title="Nhập email theo cú pháp ">
+           
+			<span id="EmailError" style="color:red;">* bắt buộc</span>
+			<br>
+
+			<lable><b>Số điện thoại</b></lable>
+            <br>
+			<input type="tel" onblur="kiemTraSDT()" size="30" style="height:35px"
+			name="sdt" id="sdt" 
+			pattern="/^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/" required placeholder="Nhập số điện thoại" title="Nhập sđt">
+           
+			<span id="sdtError" style="color:red;">* bắt buộc</span>
+			<br>
+
+			<lable><b>Địa chỉ</b></lable>
+            <br>
+			<input type="text" onblur="kiemTraDiaChi()" size="30" style="height:35px"
+			name="diachi" id="diachi" 
+			pattern="/^[A-Z0-9][a-z0-9]*(\s[A-Z0-9][a-z0-9]*)*$/" required placeholder="Nhập địa chỉ" title="Nhập địa chỉ">
+          
+			<span id="diachiError" style="color:red;">* bắt buộc</span>
+			<br>
+
+			<lable><b>Mật khẩu</b></lable>
+			<br>
+			<input type="password" onblur="kiemTraPass()" size="30" style="height:35px" 
+			name="Pass" id="Pass" 
+			placeholder="Nhập Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}">
+			
+			<span id="PassError" style="color:red;"></span>
+			<br>
+			
+			
+			<lable><b>Xác nhận lại mật khẩu</b></lable>
+			<br>
+			<input type="password" onblur="kiemTraRePass()" size="30" style="height:35px" 
+			name="RePass" id="RePass" placeholder="Xác nhận Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" >
+
+            
+			<span id="RePassError" style="color:red;"></span>
+            <br><br>
+           
+			<div><input type="submit"  value=" SIGN UP " style="height: 45px; background-color: #107DE2; margin-bottom: 10px; margin-left:  100px; 
+			color: white;" onclick="signup();" class="btn btn-primary btn btn-lg" ></div>
+		</div>
+	</div>
+	</form>
+	
+    <script>
+
+		function kiemTraTen(){
+			var checkkytu=/([A-Z]{1}[a-z]+)((\s{1}[A-Z]{1}[a-z]+){1,})$/;
+			var ten=document.getElementById("ten").value.trim();
+           if(!checkkytu.test(ten)){
+              
+               document.getElementById('tenError').innerHTML="* Tên phải viết hoa kí tự đầu, không dùng số";
+               return false;
+           }
+           else{
+        		document.getElementById('tenError').innerHTML="*"; 
+           }
+		}
+
+		function kiemTraEmail(){
+			var Email = document.getElementById("Email").value.trim();
+			var EmailFormat =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9]+)*$/;
+			
+			if (!EmailFormat.test(Email))
+			{
+				document.getElementById('EmailError').innerHTML="Vui lòng kiểm tra lại Email !";
+				return false;
+			}
+			else{
+        		document.getElementById('EmailError').innerHTML="*"; 
+           }
+		}
+
+		function kiemTraSDT(){
+			var phone = document.getElementById("sdt").value.trim();
+			var checkkytu =/^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/;
+			
+			if (!checkkytu.test(phone))
+			{
+				document.getElementById('sdtError').innerHTML="Vui lòng kiểm tra lại sdt !";
+				return false;
+			}
+			else{
+        		document.getElementById('sdtError').innerHTML="*"; 
+           }
+		}
+
+		function kiemTraDiaChi(){
+			var diachi = document.getElementById("diachi").value.trim();
+			var checkkytu =/^[A-Z0-9][a-z0-9]*(\s[A-Z0-9][a-z0-9]*)*$/;
+			
+			if (!checkkytu.test(diachi))
+			{
+				document.getElementById('diachiError').innerHTML="Vui lòng kiểm tra lại địa chỉ !";
+				return false;
+			}
+			else{
+        		document.getElementById('diachiError').innerHTML="*"; 
+           }
+		}
+
+		function kiemTraPass(){
+            var mk=document.getElementById("Pass").value.trim();
+            var checkpassword=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
+            if(!checkpassword.test(mk)){
+               document.getElementById('PassError').innerHTML='*Phải có ít nhất 8 kí tự (vd:Aab12345)'
+               
+               return false;
+            }
+            else{
+                document.getElementById('PassError').innerHTML='*'
+                return true;
+            }
+        }
+        function kiemTraRePass(){
+            var mk=document.getElementById("Pass").value.trim();
+			var rmk=document.getElementById("RePass").value.trim();
+            if(mk!=rmk){
+                
+                document.getElementById('RePassError').innerHTML="* Password nhập lại không chính xác";
+                return false;
+            }
+            else{
+                document.getElementById('RePassError').innerHTML="*";
+                return true;
+            }
+        }
+
+		function signup(){
+			if(kiemTraTen==false || kiemTraEmail==false || kiemTraSDT==false || kiemTraDiaChi==false || kiemTraPass==false || kiemTraRePass==false)
+			alert('Yêu cầu điền đủ thông tin');
+			else
+            {
+                var tt1=document.getElementById("txtTen").value;
+                alert("xin chào " +tt1);
+                return true;
+            }
+
+		}
+
+
+	</script>
+</body>
+</html>

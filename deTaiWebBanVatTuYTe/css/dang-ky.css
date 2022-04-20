@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+*{
+	font-family: Arial,san-serif;
+	box-sizing: border-box;
+ }
+
+
+form
+{
+	width: 650px; 
+	background:#FFF; 
+	border-radius:10px; 
+	margin: 15px 600px 0 50px;
+}
+
+#dang-ky img
+{
+	display: block;
+	
+  	border: 0.1875em solid #0F1C3F;
+  	border-radius: 50%;
+  	box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  	height: 5em;
+  	width: 5em;
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+
+.signup-social
+{
+	margin-left: 70px;
+	padding: 10px;
+	border-radius: 20px;
+	display: block;
+	width: 75%;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Poppins", sans-serif;
+	border: none;
+	background-color: #4c6ff6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0 5px 10px 0 rgba(76, 111, 244, 0.5);
+}
+
+
+.signup-social-icon
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #4c6ff6;
+	font-size: 40px;
+	padding-top: 12px;
+	
+}
+
+.signup-social-text
+{
+	display: block;
+	margin: 0 auto;
+	
+}
+
+.signup-or
+{
+	text-align: center;
+	font-size: 20px;
+	color: #999;
+	margin: 5px auto;
+	position: relative;
+	
+	
+}
+
+.signup-or span
+{
+	display: inline-block;
+	padding: 5px 20px ;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+	margin-top: 16px;
+}
+
+.signup-or:after
+{
+	content: "";
+	width: 80%;
+	height: 1px;
+	background-color: #999;
+	position: absolute;
+	top: 50%;
+	left: 35px;
+	transform: translateY(-50%);
+}
+
+		
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 1024px) {
+}		
